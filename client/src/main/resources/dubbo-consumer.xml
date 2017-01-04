@@ -15,7 +15,6 @@
 
     <dubbo:consumer timeout="5000" />
 
-    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <!-- 不知道能不能用注解，一个一个注册不敢想。。。 -->
-    <dubbo:reference interface="xinQing.example.service.UserService" />
+    <dubbo:annotation package="xinQing.client.service" />
+
 </beans>

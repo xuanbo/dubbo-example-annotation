@@ -1,12 +1,15 @@
 package xinQing;
 
-import com.alibaba.dubbo.container.Main;
 
-/**
- * 方便开发时运行项目的，在生产环境时直接使用dubbo的main方法
- */
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.IOException;
+
 public class App {
-    public static void main(String[] args) {
-        Main.main(args);
+    public static void main(String[] args) throws IOException {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
+                new String[] { "applicationContext.xml" });
+        context.start();
+        System.in.read(); // 为保证服务一直开着，利用输入流的阻塞来模拟
     }
 }

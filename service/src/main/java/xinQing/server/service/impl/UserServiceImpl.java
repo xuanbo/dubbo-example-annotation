@@ -1,16 +1,21 @@
-package xinQing.example.service.impl;
+package xinQing.server.service.impl;
 
-import org.springframework.stereotype.Service;
-import xinQing.example.dto.UserDto;
-import xinQing.example.service.UserService;
+import com.alibaba.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Component;
+import xinQing.api.dto.UserDto;
+import xinQing.api.service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/1/4.
+ * 注意：这里是dubbo的@Service
+ *
+ * `@Component` 被Spring管理，声明一个Bean
+ * `@Service`就是dubbo本身的注解,接口暴露
  */
-@Service("userService")
+@Component
+@Service
 public class UserServiceImpl implements UserService {
 
     /** 随便返回下 */
