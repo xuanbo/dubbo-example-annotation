@@ -1,0 +1,10 @@
+.idea/
+*.iml
+
+api/target/
+client/target/
+service/target/
+
+api/*.iml
+client/*.iml
+service/*.iml
