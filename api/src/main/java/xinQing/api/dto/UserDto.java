@@ -1,4 +1,4 @@
-package xinQing.example.dto;
+package xinQing.api.dto;
 
 import java.io.Serializable;
 

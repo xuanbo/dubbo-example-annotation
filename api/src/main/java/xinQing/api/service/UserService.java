@@ -1,10 +1,12 @@
-package xinQing.example.service;
+package xinQing.api.service;
 
-import xinQing.example.dto.UserDto;
+import xinQing.api.dto.UserDto;
 
 import java.util.List;
 
 /**
+ * dubbo暴露的服务接口
+ *
  * Created by Administrator on 2017/1/4.
  */
 public interface UserService {
